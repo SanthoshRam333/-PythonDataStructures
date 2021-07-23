@@ -55,9 +55,9 @@ print(new2)
 
 #stripping whitespace
 greet = '      Hello Bob  '
-greet.lstrip()
-greet.lstrip()
-greet.strip()
+greet.lstrip() #gives - 'Hello Bob  '
+greet.rstrip() #gives - '     Hello Bob'
+greet.strip() #gives - 'Hello Bob'
 
 #prefixes
 line = 'Please have a nice day'
