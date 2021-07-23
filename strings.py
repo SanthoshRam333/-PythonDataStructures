@@ -56,3 +56,9 @@ print(s[6:7])
 
 #if the second no. is beyond the string, it stops at th end of the string
 print(s[6:20])
+
+#if we leave of the first and the second no. of the slice, it is assumed
+#to be the beginning or the ending of the string.
+print(s[:2])
+print(s[8:])
+print(s[:])
