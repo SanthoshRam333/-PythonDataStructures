@@ -1,6 +1,7 @@
 #Write code using find() and string slicing (see section 6.10) to extract
 #the number at the end of the line below. Convert the extracted value to
 #a floating point number and print it out.
+text = "X-DSPAM-Confidence:    0.8475"
 pos=text.find(':')
 value=text[pos+1:]
 print(float(value))
@@ -53,9 +54,9 @@ fname = input("Enter file name: ")
 fh = open(fname)
 lst = list()
 for line in fh:
-    for i in line.split():
-        if not i in lst:
-            lst.append(i)
+    for words in line.split():
+        if not word in lst:
+            lst.append(word)
 lst.sort()
 print(lst)
 
